@@ -1,0 +1,32 @@
+[user]
+	email = kurian.pro@gmail.com
+	name = kurianbenoy
+
+[alias]
+	st = status
+	di = diff
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	c = commit
+	dc = diff --cached
+	rc = rebase --continue
+	ca = commit --amend
+	git = !git
+	testci = "!testci () { echo $1 >$1 && git add $1 && git commit -m $1; }; testci"
+	k = log --decorate --oneline --graph --boundary
+	pff = pull --ff-only
+	co = checkout
+	mff = merge --ff-only
+	refs = for-each-ref --format=%(refname)
+	kk = log --graph --boundary --pretty=format:'%Cred%h%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>'
+	s = status --short
+	view = log --decorate --oneline --graph --boundary --all HEAD
+	lv = log --decorate --oneline --graph --boundary --branches HEAD --not --tags --remotes=origin --remotes=upstream --not
+	f = "!git ls-files | grep -i"
+	gr = grep -Ii
+	pm = push origin master
+	p = push 
+
+[http]
+	sslVerify = false
+[https]
+	sslVerify = false
