@@ -1,7 +1,7 @@
 "Vim Configuration
 "Maintainer : Kurian Benoy
 
-set number
+set number relativenumber
 set nocompatible
 set nocompatible
 set modelines=0
