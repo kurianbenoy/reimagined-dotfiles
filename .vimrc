@@ -1,37 +1,25 @@
 "Vim Configuration
 "Maintainer : Kurian Benoy
 
-set number relativenumber
-set nocompatible
-set nocompatible
-set modelines=0
+syntax enable
+set number
 set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set encoding=utf-8
-set scrolloff=3
+
+set laststatus=2
+set statusline+=\ %t
+set statusline+=%=
+set statusline+=%l,
+set statusline+=%c
+set statusline+=\ %p%%
+set statusline+=(%L)
+set textwidth=120
+
 set autoindent
+" autoallign also present https://www.vim.org/scripts/script.php?script_id=884
+
 set showmode
 set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
 set visualbell
-
-set ttyfast
-set ruler
-set backspace=indent,eol,start
-set laststatus=2
-
-set ignorecase
-set smartcase
-set gdefault
-set incsearch
-set showmatch
-set hlsearch
-
-syntax on
-filetype plugin indent on
-execute pathogen#infect()
-
-
