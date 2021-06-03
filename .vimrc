@@ -19,7 +19,6 @@ set statusline+=(%L)
 set textwidth=120
 
 set autoindent
-" autoallign also present https://www.vim.org/scripts/script.php?script_id=884
 
 set showmode
 set showcmd
